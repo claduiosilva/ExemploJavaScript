@@ -34,11 +34,38 @@
 
             alert("Seu imc é: " + imc);
         }
+        function tipoFruta(){
+            var fruta = prompt("Informe uma fruta:")
+            switch (fruta){
+                case 'laranja':
+                    alert('Cítrica');
+                    break;
+                case 'mamao':
+                    alert('Doce');
+                    break;
+                case 'limao':
+                    alert('Cítrica');
+                    break;
+                default:
+                    arlet('Fruta não cadastrada');
+                    break;
+            }
+            
+        }
+
+        function eMaior(){
+            var idade = parseInt(prompt("informe sua Idade"))
+            if (idade >= 18 ){
+                alert('Maior de idade')
+            }else{
+                alert('Menor de idade')
+            }
+        }
     </script>
 </head>
 <body>
     <!--button onclick="exibirAlerta()">ALERTA</button-->
-    <button onclick="imc()">ALERTA</button>
+    <button onclick="tipoFruta()">ALERTA</button>
     
 </body>
 </html>
