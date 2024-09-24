@@ -18,7 +18,7 @@
         function soma(){
             var a = parseInt(prompt("Informe um valor: ")); //Entrada
             var b = parseInt(prompt("Informe um valor: "));
-            soma = a + b;
+            var soma = a + b;
 
             alert(soma) ;
         }
@@ -61,11 +61,36 @@
                 alert('Menor de idade')
             }
         }
+
+        function calculadora(){
+            var operacao = prompt ("Deseja fazer qual operação?")
+            var num1 = parseFloat(prompt("Informe o primeiro número:"));
+            var num1 = parseFloat(prompt("Informe o segundo número:"));
+
+            if (operacao == 'soma'){
+                alert(num1 + num2);
+            } else {
+                if (operacao== 'subtracao') {
+                   alert(num1 - num2);
+                } else {
+                    if (operacao== 'multiplicacao') {
+                        alert(num1 * num2);
+                    } else {
+                        if (operacao== 'divisao') {
+                            alert(num1/num2);
+                        } else {
+                            alert('operacao invalida')
+                        }
+                        }
+                        }
+        
+            }        
+        }
     </script>
 </head>
 <body>
     <!--button onclick="exibirAlerta()">ALERTA</button-->
-    <button onclick="tipoFruta()">ALERTA</button>
+    <button onclick="calculadora()">ALERTA</button>
     
 </body>
 </html>
